@@ -1,0 +1,26 @@
+/* Google Font: Barlow (600/Semibold) */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+
+/* Google Font: Fraunces (700/Bold and 900/Black) */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --softRed: #fe7867;
+  --yellow: #fad400;
+  --darkDesaturatedCyan: #25564b; /* graphic design text */
+  --darkBlue: #19536b; /* photography text */
+  --darkModerateCyan: #458c7e; /* footer */
+  --veryDarkDesaturatedBlue: #23303e;
+  --veryDarkGrayishBlue: #5a636c;
+  --darkGrayishBlue: #818498;
+  --grayishBlue: #a7abae;
+  --white: #ffffff;
+}
+
+body {
+  font-size: 1.125rem;
+}
