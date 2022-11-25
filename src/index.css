@@ -24,3 +24,9 @@
 body {
   font-size: 1.125rem;
 }
+
+.header-bg {
+  background: url('./assets/images/mobile/image-header.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
