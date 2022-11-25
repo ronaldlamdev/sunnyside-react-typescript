@@ -30,3 +30,12 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+@media (min-width: 565px) {
+  .header-bg {
+    background: url('./assets/images/desktop/image-header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
