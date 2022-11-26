@@ -39,3 +39,10 @@ body {
     background-position: center;
   }
 }
+
+.right-triangle {
+  width: 0;
+	height: 0;
+	border-bottom: 33px solid white;
+	border-left: 33px solid transparent;
+}

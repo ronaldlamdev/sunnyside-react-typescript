@@ -15,6 +15,15 @@ const Header = () => {
           <button>Contact</button>
         </ul>
         <FaBars size={22} className='text-white cursor-pointer min-[566px]:hidden' />
+        <div className='right-triangle absolute top-20 right-8' />
+        <div className='absolute top-28 left-0 right-0 mx-auto w-full max-w-[310px] h-[300px] bg-white'>
+          <ul className='w-full h-full flex flex-col items-center justify-evenly'>
+            <li>About</li>
+            <li>Services</li>
+            <li>Projects</li>
+            <button>Contact</button>
+          </ul>
+        </div>
       </div>
 
 
