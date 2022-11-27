@@ -12,7 +12,9 @@ const Header = () => {
 
   return (
     <div className='w-full h-screen header-bg'>
-      <div className='flex justify-between items-center p-8'>
+
+      {/* Navbar  */}
+      <nav className='flex justify-between items-center p-8'>
         <a href='/'>
           <img src={Logo} alt='logo'/>
         </a>
@@ -36,9 +38,12 @@ const Header = () => {
           </ul>
         </div>
         </div>
+      </nav>
+
+      {/* Text over background */}
+      <div className='w-full flex justify-center h-[200px] items-center'>
+        <h1 className='uppercase text-white text-center text-5xl tracking-widest font-["Fraunces"]'>we are creatives</h1>
       </div>
-
-
 
     </div>
   )
