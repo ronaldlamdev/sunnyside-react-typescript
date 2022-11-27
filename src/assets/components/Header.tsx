@@ -17,20 +17,22 @@ const Header = () => {
           <img src={Logo} alt='logo'/>
         </a>
         <ul className='hidden min-[565px]:flex items-center'>
-          <li>About</li>
-          <li>Services</li>
-          <li>Projects</li>
-          <button>Contact</button>
+          <li className='navbar-link'>About</li>
+          <li className='navbar-link'>Services</li>
+          <li className='navbar-link'>Projects</li>
+          <button className='navbar-button'>Contact</button>
         </ul>
-        <FaBars onClick={handleMobileNav} size={22} className='text-white cursor-pointer min-[565px]:hidden' />
-        <div className='absolute flex min-[565px]:hidden flex-col justify-start w-full max-w-[310px] min-[480px]:max-w-[400px] h-[330px] top-20 mx-auto left-0 right-0'>
+        <FaBars onClick={handleMobileNav} size={22} className='fabars' />
+
+        {/* Mobile menu */}
+        <div className='mobile-menu'>
           <div className={(mobileNav ? 'block ' : 'hidden ') + 'right-triangle  self-end'} />
-          <div className={(mobileNav ? 'block' : 'hidden ') + 'mx-auto w-full h-[300px] bg-white shadow-lg rounded-b rounded-tl'}>
+          <div className={(mobileNav ? 'block ' : 'hidden ') + 'mobile-menu-div'}>
           <ul className='w-full h-full flex flex-col items-center justify-evenly'>
-            <li className='cursor-pointer font-["Barlow"] text-[#5a636c]'>About</li>
-            <li className='cursor-pointer font-["Barlow"] text-[#5a636c]'>Services</li>
-            <li className='cursor-pointer font-["Barlow"] text-[#5a636c]'>Projects</li>
-            <button className='bg-[#fad400] px-6 py-3 rounded-3xl font-["Fraunces"]'>Contact</button>
+            <li className='mobile-menu-link'>About</li>
+            <li className='mobile-menu-link'>Services</li>
+            <li className='mobile-menu-link'>Projects</li>
+            <button className='mobile-menu-button'>Contact</button>
           </ul>
         </div>
         </div>
