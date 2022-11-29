@@ -28,7 +28,8 @@ body {
 .header-bg {
   background: url('./assets/images/mobile/image-header.jpg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
 }
 
 @media (min-width: 565px) {
@@ -45,7 +46,7 @@ body {
 .mobile-menu {
   @apply absolute flex min-[565px]:hidden flex-col justify-start 
   w-full max-w-[310px] min-[480px]:max-w-[400px] h-[330px] top-20 
-  mx-auto left-0 right-0
+  mx-auto left-0 right-0 z-10
 }
 
 .mobile-menu-div {
@@ -87,7 +88,15 @@ body {
   cursor-pointer min-[565px]:hidden
 }
 
-/* Arrowheads */
+/* Arrow */
+
+.arrow-container {
+  @apply w-fit flex justify-center mx-auto relative cursor-pointer
+}
+
+.arrow-body {
+  @apply w-[5px] h-[120px] bg-white rounded-t
+}
 
 .right-arrow-head {
   @apply w-[5px] h-10 bg-white absolute bottom-0 rotate-45 

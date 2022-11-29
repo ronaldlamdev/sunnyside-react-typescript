@@ -11,7 +11,7 @@ const Header = () => {
   }
 
   return (
-    <div className='w-full h-screen header-bg'>
+    <div className='w-full h-[80vh] header-bg'>
 
       {/* Navbar  */}
       <nav className='flex justify-between items-center p-8'>
@@ -46,8 +46,8 @@ const Header = () => {
       </div>
 
       {/* Downward arrow */}
-      <div className='w-full flex justify-center relative cursor-pointer'>
-        <div className='w-[5px] h-[120px] bg-white rounded-t'/>
+      <div className='arrow-container'>
+        <div className='arrow-body'/>
         <div className='right-arrow-head'/>
         <div className='left-arrow-head'/>
       </div>
