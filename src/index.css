@@ -86,3 +86,15 @@ body {
   @apply text-white hover:scale-125 duration-[400ms] 
   cursor-pointer min-[565px]:hidden
 }
+
+/* Arrowheads */
+
+.right-arrow-head {
+  @apply w-[5px] h-10 bg-white absolute bottom-0 rotate-45 
+  origin-bottom-left
+}
+
+.left-arrow-head {
+  @apply w-[5px] h-10 bg-white absolute bottom-0 rotate-[-45deg]
+  origin-bottom-right
+}

@@ -45,10 +45,11 @@ const Header = () => {
         <h1 className='uppercase text-white text-center text-5xl tracking-widest font-["Fraunces"]'>we are creatives</h1>
       </div>
 
-      <div className='w-full flex justify-center relative'>
+      {/* Downward arrow */}
+      <div className='w-full flex justify-center relative cursor-pointer'>
         <div className='w-[5px] h-[120px] bg-white rounded-t'/>
-        <div className='w-[5px] h-10 bg-white absolute bottom-0 rotate-45 origin-bottom-left'/>
-        <div className='w-[5px] h-10 bg-white absolute bottom-0 rotate-[-45deg] origin-bottom-right'/>
+        <div className='right-arrow-head'/>
+        <div className='left-arrow-head'/>
       </div>
     </div>
   )
