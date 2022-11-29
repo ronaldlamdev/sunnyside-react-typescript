@@ -33,26 +33,16 @@ const Main = () => {
         </div>
       </div>
 
-      {/* Graphic Design */}
+      {/* Graphic Design and Photography*/}
       <div>
         <picture>
           <source srcSet={GraphicDesignDesktop} media="(min-width:565px)"/>
           <img src={GraphicDesignMobile} alt="cherries"/>
         </picture>
-        <div>
-
-        </div>
-      </div>
-
-      {/* Photography */}
-      <div>
         <picture>
           <source srcSet={PhotographyDesktop} media="(min-width:565px)"/>
           <img src={PhotographyMobile} alt="orange" />
         </picture>
-        <div>
-          
-        </div>
       </div>
     </div>
   )
