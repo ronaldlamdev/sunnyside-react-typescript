@@ -18,7 +18,15 @@ const Main = () => {
           <img src={TransformMobile} alt="egg"/>
         </picture>
         <div>
-
+          <h1>Transform your brand</h1>
+          <p>
+            We are a full-service creative agency
+            specializing in helping brands grow fast. 
+            Engage your clients through compelling 
+            visuals that do most of the marketing for
+            you. 
+          </p>
+          <span>learn more</span>
         </div>
       </div>
 
@@ -29,20 +37,47 @@ const Main = () => {
           <img src={StandOutMobile} alt="cup"/>
         </picture>
         <div>
-
+          <h1>Stand out to the right audience</h1>
+          <p>
+            Using a collaborative formula of designers,
+            researchers, photographers, videographers,
+            and copywriters, we'll build and extend your
+            brand in digital places.
+          </p>
+          <span>learn more</span>
         </div>
       </div>
 
       {/* Graphic Design and Photography*/}
       <div>
-        <picture>
-          <source srcSet={GraphicDesignDesktop} media="(min-width:565px)"/>
-          <img src={GraphicDesignMobile} alt="cherries"/>
-        </picture>
-        <picture>
-          <source srcSet={PhotographyDesktop} media="(min-width:565px)"/>
-          <img src={PhotographyMobile} alt="orange" />
-        </picture>
+        <div>
+          <picture>
+            <source srcSet={GraphicDesignDesktop} media="(min-width:565px)"/>
+            <img src={GraphicDesignMobile} alt="cherries"/>
+          </picture>
+          <div>
+            <h1>Graphic Design</h1>
+            <p>
+              Great design makes you memorable. We deliver
+              artwork that underscores your brand message and
+              captures potential clients' attention.
+            </p>
+          </div>
+        </div>
+        <div>
+          <picture>
+            <source srcSet={PhotographyDesktop} media="(min-width:565px)"/>
+            <img src={PhotographyMobile} alt="orange" />
+          </picture>
+          <div>
+            <h1>Photography</h1>
+            <p>
+              Increase your credibility by getting the most
+              stunning, high-quality photos that improve your
+              business image.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   )
