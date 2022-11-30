@@ -107,3 +107,17 @@ body {
   @apply w-[5px] h-10 bg-white absolute bottom-0 rotate-[-45deg]
   origin-bottom-right
 }
+
+/* Main component */
+
+.transform-text-shadow::after {
+  content: '';
+  @apply absolute bg-[#fad400] w-32 h-3 top-5 
+  left-0 bg-opacity-40 rounded-2xl
+}
+
+.stand-out-text-shadow::after {
+  content: '';
+  @apply absolute bg-[#fe7867] w-32 h-3 top-5 
+  left-0 bg-opacity-40 rounded-2xl
+}

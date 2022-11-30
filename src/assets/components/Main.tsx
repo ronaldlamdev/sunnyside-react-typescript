@@ -9,48 +9,58 @@ import PhotographyDesktop from '../images/desktop/image-photography.jpg';
 
 const Main = () => {
   return (
-    <div className="grid w-full grid-cols-1">
+    <div className="flex flex-col">
 
       {/* Transform */}
-      <div>
+      <div className='w-full flex flex-col min-[565px]:flex-row-reverse'>
         <picture>
           <source srcSet={TransformDesktop} media='(min-width:565px)'/>
-          <img src={TransformMobile} alt="egg"/>
+          <img className='h-full' src={TransformMobile} alt="egg"/>
         </picture>
-        <div>
-          <h1>Transform your brand</h1>
-          <p>
+        <div className='w-full flex justify-center gap-8 flex-col items-center text-center px-4 py-12'>
+          <h1 className='text-[#23303e] text-4xl font-["Fraunces"]'>
+            Transform your brand
+          </h1>
+          <p className='text-[#5a636c] font-["Barlow"]'>
             We are a full-service creative agency
             specializing in helping brands grow fast. 
             Engage your clients through compelling 
             visuals that do most of the marketing for
             you. 
           </p>
-          <span>learn more</span>
+          <span className='uppercase font-["Fraunces"] transform-text-shadow relative'>
+            learn more
+          </span>
         </div>
       </div>
 
       {/* Stand Out */}
-      <div>
+      <div className='w-full flex flex-col min-[565px]:flex-row'>
         <picture>
           <source srcSet={StandOutDesktop} media="(min-width:565px)"/>
-          <img src={StandOutMobile} alt="cup"/>
+          <img className='h-full ' src={StandOutMobile} alt="cup"/>
         </picture>
-        <div>
-          <h1>Stand out to the right audience</h1>
-          <p>
+        <div className='w-full flex justify-center gap-8 flex-col items-center text-center px-4 py-12'>
+          <h1 className='text-[#23303e] text-4xl font-["Fraunces"]'>
+            Stand out to the right audience
+          </h1>
+          <p className='text-[#5a636c] font-["Barlow"]'>
             Using a collaborative formula of designers,
             researchers, photographers, videographers,
             and copywriters, we'll build and extend your
             brand in digital places.
           </p>
-          <span>learn more</span>
+          <span className='uppercase relative font-["Fraunces"] stand-out-text-shadow'>
+            learn more
+          </span>
         </div>
       </div>
 
       {/* Graphic Design and Photography*/}
-      <div>
-        <div>
+      <div className='flex flex-col items-center w-full'>
+
+        {/* Graphic Design */}
+        <div className='w-full'>
           <picture>
             <source srcSet={GraphicDesignDesktop} media="(min-width:565px)"/>
             <img src={GraphicDesignMobile} alt="cherries"/>
@@ -64,7 +74,9 @@ const Main = () => {
             </p>
           </div>
         </div>
-        <div>
+
+        {/* Photography */}
+        <div className='w-full'>
           <picture>
             <source srcSet={PhotographyDesktop} media="(min-width:565px)"/>
             <img src={PhotographyMobile} alt="orange" />
