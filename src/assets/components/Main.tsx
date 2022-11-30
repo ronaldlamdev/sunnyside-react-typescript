@@ -60,14 +60,14 @@ const Main = () => {
       <div className='flex flex-col items-center w-full'>
 
         {/* Graphic Design */}
-        <div className='w-full'>
+        <div className='w-full relative'>
           <picture>
             <source srcSet={GraphicDesignDesktop} media="(min-width:565px)"/>
             <img src={GraphicDesignMobile} alt="cherries"/>
           </picture>
-          <div>
-            <h1>Graphic Design</h1>
-            <p>
+          <div className='absolute flex flex-col items-center text-[#25564b] text-center bottom-0 left-0'>
+            <h1 className='font-["Fraunces"]'>Graphic Design</h1>
+            <p className='font-["Barlow"]'>
               Great design makes you memorable. We deliver
               artwork that underscores your brand message and
               captures potential clients' attention.
@@ -76,7 +76,7 @@ const Main = () => {
         </div>
 
         {/* Photography */}
-        <div className='w-full'>
+        <div className='w-full relative'>
           <picture>
             <source srcSet={PhotographyDesktop} media="(min-width:565px)"/>
             <img src={PhotographyMobile} alt="orange" />
