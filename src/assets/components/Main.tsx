@@ -65,8 +65,8 @@ const Main = () => {
             <source srcSet={GraphicDesignDesktop} media="(min-width:565px)"/>
             <img src={GraphicDesignMobile} alt="cherries"/>
           </picture>
-          <div className='absolute flex flex-col items-center text-[#25564b] text-center bottom-0 left-0'>
-            <h1 className='font-["Fraunces"]'>Graphic Design</h1>
+          <div className='absolute flex flex-col items-center text-[#25564b] text-center bottom-20 px-4 gap-4 left-0'>
+            <h1 className='font-["Fraunces"] text-3xl'>Graphic Design</h1>
             <p className='font-["Barlow"]'>
               Great design makes you memorable. We deliver
               artwork that underscores your brand message and
@@ -81,9 +81,9 @@ const Main = () => {
             <source srcSet={PhotographyDesktop} media="(min-width:565px)"/>
             <img src={PhotographyMobile} alt="orange" />
           </picture>
-          <div>
-            <h1>Photography</h1>
-            <p>
+          <div className='absolute flex flex-col items-center text-[#19536b] text-center bottom-20 px-4 gap-4 left-0'>
+            <h1 className='font-["Fraunces"] text-3xl'>Photography</h1>
+            <p className='font-["Barlow"]'>
               Increase your credibility by getting the most
               stunning, high-quality photos that improve your
               business image.
