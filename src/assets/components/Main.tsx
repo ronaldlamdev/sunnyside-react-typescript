@@ -9,15 +9,15 @@ import PhotographyDesktop from '../images/desktop/image-photography.jpg';
 
 const Main = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col w-full justify-between">
 
       {/* Transform */}
-      <div className='w-full flex flex-col min-[565px]:flex-row-reverse'>
+      <div className='w-full flex flex-col min-[565px]:grid min-[565px]:grid-cols-2'>
         <picture>
           <source srcSet={TransformDesktop} media='(min-width:565px)'/>
-          <img className='h-full' src={TransformMobile} alt="egg"/>
+          <img className='h-full w-full min-[565px]:order-last' src={TransformMobile} alt="egg"/>
         </picture>
-        <div className='w-full flex justify-center gap-8 flex-col items-center text-center px-4 py-12'>
+        <div className='w-full min-[565px]:order-first flex justify-center gap-8 flex-col items-center text-center px-4 py-12'>
           <h1 className='text-[#23303e] text-4xl font-["Fraunces"]'>
             Transform your brand
           </h1>
@@ -35,10 +35,10 @@ const Main = () => {
       </div>
 
       {/* Stand Out */}
-      <div className='w-full flex flex-col min-[565px]:flex-row'>
+      <div className='w-full flex flex-col min-[565px]:grid min-[565px]:grid-cols-2'>
         <picture>
           <source srcSet={StandOutDesktop} media="(min-width:565px)"/>
-          <img className='h-full ' src={StandOutMobile} alt="cup"/>
+          <img className='h-full w-full' src={StandOutMobile} alt="cup"/>
         </picture>
         <div className='w-full flex justify-center gap-8 flex-col items-center text-center px-4 py-12'>
           <h1 className='text-[#23303e] text-4xl font-["Fraunces"]'>
@@ -57,7 +57,7 @@ const Main = () => {
       </div>
 
       {/* Graphic Design and Photography*/}
-      <div className='flex flex-col items-center w-full'>
+      <div className='flex flex-col items-center w-full min-[565px]:grid min-[565px]:grid-cols-2'>
 
         {/* Graphic Design */}
         <div className='w-full relative'>
@@ -81,7 +81,7 @@ const Main = () => {
             <source srcSet={PhotographyDesktop} media="(min-width:565px)"/>
             <img src={PhotographyMobile} alt="orange" />
           </picture>
-          <div className='absolute flex flex-col items-center text-[#19536b] text-center bottom-20 px-4 gap-4 left-0'>
+          <div className='absolute flex flex-col items-center text-[#19536b] text-center bottom-0 px-4 gap-4 left-0'>
             <h1 className='font-["Fraunces"] text-3xl'>Photography</h1>
             <p className='font-["Barlow"]'>
               Increase your credibility by getting the most
