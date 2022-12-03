@@ -21,7 +21,7 @@ const Main = () => {
           <h1 className='text-[#23303e] text-4xl font-["Fraunces"]'>
             Transform your brand
           </h1>
-          <p className='text-[#5a636c] font-["Barlow"]'>
+          <p className='text-[#5a636c] font-["Barlow"] xl:text-xl'>
             We are a full-service creative agency
             specializing in helping brands grow fast. 
             Engage your clients through compelling 
@@ -44,7 +44,7 @@ const Main = () => {
           <h1 className='text-[#23303e] text-4xl font-["Fraunces"]'>
             Stand out to the right audience
           </h1>
-          <p className='text-[#5a636c] font-["Barlow"]'>
+          <p className='text-[#5a636c] font-["Barlow"] xl:text-xl'>
             Using a collaborative formula of designers,
             researchers, photographers, videographers,
             and copywriters, we'll build and extend your
