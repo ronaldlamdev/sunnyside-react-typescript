@@ -110,10 +110,39 @@ body {
 
 /* Main component */
 
+/* Transform */
+
+.transform-container {
+  @apply w-full flex flex-col min-[565px]:grid 
+  min-[565px]:grid-cols-2
+}
+
+.transform-text-div {
+  @apply w-full min-[565px]:order-first flex justify-center 
+  gap-8 flex-col items-center text-center px-4 py-12
+  min-[565px]:text-left min-[565px]:items-start
+}
+
 .transform-text-shadow::after {
   content: '';
   @apply absolute bg-[#fad400] w-32 h-3 top-5 
   left-0 bg-opacity-40 rounded-2xl
+}
+
+.learn-more {
+  @apply uppercase font-["Fraunces"] transform-text-shadow relative
+}
+
+/* Standout */
+
+.standout-container {
+  @apply w-full flex flex-col min-[565px]:grid 
+  min-[565px]:grid-cols-2 
+}
+
+.standout-text-div {
+  @apply w-full flex justify-center gap-8 flex-col items-center 
+  text-center px-4 py-12 min-[565px]:text-left min-[565px]:items-start
 }
 
 .stand-out-text-shadow::after {

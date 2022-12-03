@@ -12,12 +12,12 @@ const Main = () => {
     <div className="flex flex-col w-full justify-between">
 
       {/* Transform */}
-      <div className='w-full flex flex-col min-[565px]:grid min-[565px]:grid-cols-2'>
+      <div className='transform-container'>
         <picture>
           <source srcSet={TransformDesktop} media='(min-width:565px)'/>
           <img className='h-full w-full min-[565px]:order-last' src={TransformMobile} alt="egg"/>
         </picture>
-        <div className='w-full min-[565px]:order-first flex justify-center gap-8 flex-col items-center text-center px-4 py-12'>
+        <div className='transform-text-div'>
           <h1 className='text-[#23303e] text-4xl font-["Fraunces"]'>
             Transform your brand
           </h1>
@@ -28,19 +28,19 @@ const Main = () => {
             visuals that do most of the marketing for
             you. 
           </p>
-          <span className='uppercase font-["Fraunces"] transform-text-shadow relative'>
+          <span className='learn-more transform-text-shadow'>
             learn more
           </span>
         </div>
       </div>
 
       {/* Stand Out */}
-      <div className='w-full flex flex-col min-[565px]:grid min-[565px]:grid-cols-2'>
+      <div className='standout-container'>
         <picture>
           <source srcSet={StandOutDesktop} media="(min-width:565px)"/>
           <img className='h-full w-full' src={StandOutMobile} alt="cup"/>
         </picture>
-        <div className='w-full flex justify-center gap-8 flex-col items-center text-center px-4 py-12'>
+        <div className='standout-text-div'>
           <h1 className='text-[#23303e] text-4xl font-["Fraunces"]'>
             Stand out to the right audience
           </h1>
@@ -50,7 +50,7 @@ const Main = () => {
             and copywriters, we'll build and extend your
             brand in digital places.
           </p>
-          <span className='uppercase relative font-["Fraunces"] stand-out-text-shadow'>
+          <span className='learn-more stand-out-text-shadow'>
             learn more
           </span>
         </div>
