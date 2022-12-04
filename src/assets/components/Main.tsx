@@ -57,7 +57,7 @@ const Main = () => {
       </div>
 
       {/* Graphic Design and Photography*/}
-      <div className='flex flex-col items-center w-full min-[565px]:grid min-[565px]:grid-cols-2 min-[565px]:h-[600px]'>
+      <div className='graphic-design-and-photography-div'>
 
         {/* Graphic Design */}
         <div className='w-full h-full relative'>
@@ -65,7 +65,7 @@ const Main = () => {
             <source srcSet={GraphicDesignDesktop} media="(min-width:565px)"/>
             <img className='min-[565px]:w-full min-[565px]:h-full object-cover' src={GraphicDesignMobile} alt="cherries"/>
           </picture>
-          <div className='absolute flex flex-col items-center text-[#25564b] text-center bottom-20 lg:bottom-24 2xl:bottom-32 px-4 lg:px-12 xl:px-20 2xl:px-36 gap-4 left-0'>
+          <div className='graphic-design-text-container'>
             <h1 className='font-["Fraunces"] text-3xl'>Graphic Design</h1>
             <p className='font-["Barlow"] xl:text-xl 2xl:text-2xl'>
               Great design makes you memorable. We deliver
@@ -81,7 +81,7 @@ const Main = () => {
             <source srcSet={PhotographyDesktop} media="(min-width:565px)"/>
             <img className='min-[565px]:w-full min-[565px]:h-full object-cover' src={PhotographyMobile} alt="orange" />
           </picture>
-          <div className='absolute flex flex-col items-center text-[#19536b] text-center bottom-20 lg:bottom-24 2xl:bottom-32 px-4 lg:px-12 xl:px-20 2xl:px-44 gap-4 left-0'>
+          <div className='photography-text-container'>
             <h1 className='font-["Fraunces"] text-3xl'>Photography</h1>
             <p className='font-["Barlow"] xl:text-xl 2xl:text-2xl'>
               Increase your credibility by getting the most

@@ -157,4 +157,21 @@ body {
   h-3 top-5 left-0 bg-opacity-40 rounded-2xl
 }
 
-/* Graphic Design */
+/* Graphic Design and Photography */
+
+.graphic-design-and-photography-div {
+  @apply flex flex-col items-center w-full min-[565px]:grid 
+  min-[565px]:grid-cols-2 min-[565px]:h-[600px]
+}
+
+.graphic-design-text-container {
+  @apply absolute flex flex-col items-center text-[#25564b] text-center 
+  bottom-20 lg:bottom-24 2xl:bottom-32 px-4 lg:px-12 xl:px-20 2xl:px-36 
+  gap-4 left-0
+}
+
+.photography-text-container {
+  @apply absolute flex flex-col items-center text-[#19536b] text-center 
+  bottom-20 lg:bottom-24 2xl:bottom-32 px-4 lg:px-12 xl:px-20 2xl:px-44 
+  gap-4 left-0
+}
