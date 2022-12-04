@@ -7,7 +7,7 @@ type CardProp = {
 
 const TestimonialCard = ({pfp, quote, name, position}:CardProp) => {
   return (
-    <div className='flex flex-col items-center text-center my-8 gap-8'>
+    <div className='flex flex-col items-center text-center gap-8'>
       <img className='rounded-full w-[75px] h-[75px]' src={pfp} alt={name} />
       <p className='font-["Barlow"] text-[#5a636c] px-8'>
         {quote}
