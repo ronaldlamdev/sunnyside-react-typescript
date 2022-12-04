@@ -81,7 +81,7 @@ const Main = () => {
             <source srcSet={PhotographyDesktop} media="(min-width:565px)"/>
             <img src={PhotographyMobile} alt="orange" />
           </picture>
-          <div className='absolute flex flex-col items-center text-[#19536b] text-center bottom-0 px-4 gap-4 left-0'>
+          <div className='absolute flex flex-col items-center text-[#19536b] text-center bottom-20 px-4 gap-4 left-0'>
             <h1 className='font-["Fraunces"] text-3xl'>Photography</h1>
             <p className='font-["Barlow"]'>
               Increase your credibility by getting the most
