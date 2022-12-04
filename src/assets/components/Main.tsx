@@ -57,13 +57,13 @@ const Main = () => {
       </div>
 
       {/* Graphic Design and Photography*/}
-      <div className='flex flex-col items-center w-full min-[565px]:grid min-[565px]:grid-cols-2'>
+      <div className='flex flex-col items-center w-full min-[565px]:grid min-[565px]:grid-cols-2 min-[565px]:h-[600px]'>
 
         {/* Graphic Design */}
-        <div className='w-full relative'>
+        <div className='w-full h-full relative'>
           <picture>
             <source srcSet={GraphicDesignDesktop} media="(min-width:565px)"/>
-            <img src={GraphicDesignMobile} alt="cherries"/>
+            <img className='min-[565px]:w-full object-cover' src={GraphicDesignMobile} alt="cherries"/>
           </picture>
           <div className='absolute flex flex-col items-center text-[#25564b] text-center bottom-20 px-4 gap-4 left-0'>
             <h1 className='font-["Fraunces"] text-3xl'>Graphic Design</h1>
@@ -76,10 +76,10 @@ const Main = () => {
         </div>
 
         {/* Photography */}
-        <div className='w-full relative'>
+        <div className='w-full h-full relative'>
           <picture>
             <source srcSet={PhotographyDesktop} media="(min-width:565px)"/>
-            <img src={PhotographyMobile} alt="orange" />
+            <img className='min-[565px]:w-full object-cover' src={PhotographyMobile} alt="orange" />
           </picture>
           <div className='absolute flex flex-col items-center text-[#19536b] text-center bottom-20 px-4 gap-4 left-0'>
             <h1 className='font-["Fraunces"] text-3xl'>Photography</h1>

@@ -25,6 +25,10 @@ body {
   font-size: 1.125rem;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .header-bg {
   background: url('./assets/images/mobile/image-header.jpg');
   background-repeat: no-repeat;
