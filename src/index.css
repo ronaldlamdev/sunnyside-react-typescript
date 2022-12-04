@@ -119,7 +119,7 @@ body {
 
 .transform-text-div {
   @apply w-full min-[565px]:order-first flex justify-center 
-  gap-8 flex-col items-center text-center px-4 xl:px-16 
+  gap-8 flex-col items-center text-center px-4 md:px-12 xl:px-16 
   2xl:px-40 py-12 min-[565px]:text-left min-[565px]:items-start
 }
 
@@ -143,7 +143,7 @@ body {
 
 .standout-text-div {
   @apply w-full flex justify-center gap-8 flex-col items-center 
-  text-center px-4 xl:px-16 2xl:px-40 py-12 min-[565px]:text-left
+  text-center px-4 md:px-12 xl:px-16 2xl:px-40 py-12 min-[565px]:text-left
   min-[565px]:items-start
 }
 
