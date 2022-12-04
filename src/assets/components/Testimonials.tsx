@@ -3,8 +3,8 @@ import { testimonials } from '../data/data';
 
 const Testimonials = () => {
   return (
-    <div className="w-full h-screen flex flex-col items-center">
-      <h1 className='font-["Fraunces"] text-[#a7abae] text-xl tracking-[.2rem] p-8'>
+    <div className="w-full flex flex-col items-center py-8">
+      <h1 className='font-["Fraunces"] text-[#a7abae] text-xl tracking-[.2rem] px-8 pb-12'>
         Client Testimonials
       </h1>
       {testimonials.map((testimonial) => (
