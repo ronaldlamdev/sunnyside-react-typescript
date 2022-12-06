@@ -10,7 +10,7 @@ import SugarCubeDesktop from '../images/desktop/image-gallery-sugarcubes.jpg'
 
 const Footer = () => {
   return (
-    <div className='w-full h-full'>
+    <div className='w-full'>
 
       {/* Gallery */}
       <div className='h-full grid grid-cols-2'>

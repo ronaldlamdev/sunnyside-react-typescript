@@ -9,7 +9,7 @@ import PhotographyDesktop from '../images/desktop/image-photography.jpg';
 
 const Main = () => {
   return (
-    <div className="flex h-fit flex-col w-full justify-between">
+    <div className="flex h-full flex-col w-full justify-between">
 
       {/* Transform */}
       <div className='transform-container'>
@@ -63,7 +63,7 @@ const Main = () => {
         <div className='w-full h-full relative'>
           <picture>
             <source srcSet={GraphicDesignDesktop} media="(min-width:565px)"/>
-            <img className='min-[565px]:w-full min-[565px]:h-full object-cover' src={GraphicDesignMobile} alt="cherries"/>
+            <img className='min-[565px]:w-full min-[565px]:h-full object-contain' src={GraphicDesignMobile} alt="cherries"/>
           </picture>
           <div className='graphic-design-text-container'>
             <h1 className='font-["Fraunces"] text-3xl'>Graphic Design</h1>
@@ -79,7 +79,7 @@ const Main = () => {
         <div className='w-full h-full relative'>
           <picture>
             <source srcSet={PhotographyDesktop} media="(min-width:565px)"/>
-            <img className='min-[565px]:w-full min-[565px]:h-full object-cover' src={PhotographyMobile} alt="orange" />
+            <img className='min-[565px]:w-full min-[565px]:h-full object-contain' src={PhotographyMobile} alt="orange" />
           </picture>
           <div className='photography-text-container'>
             <h1 className='font-["Fraunces"] text-3xl'>Photography</h1>
