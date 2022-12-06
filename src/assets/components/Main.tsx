@@ -9,7 +9,7 @@ import PhotographyDesktop from '../images/desktop/image-photography.jpg';
 
 const Main = () => {
   return (
-    <div className="flex flex-col w-full justify-between">
+    <div className="flex h-fit flex-col w-full justify-between">
 
       {/* Transform */}
       <div className='transform-container'>
