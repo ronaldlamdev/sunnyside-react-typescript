@@ -11,29 +11,7 @@ import SugarCubeDesktop from '../images/desktop/image-gallery-sugarcubes.jpg'
 const Footer = () => {
   return (
     <div className='w-full'>
-
-      {/* Gallery */}
-      <div className='h-full grid grid-cols-2'>
-        <picture>
-          <source srcSet={MilkBottlesDesktop} media="(min-width:565px)"/>
-          <img src={MilkBottlesMobile} alt="milk bottles"/>
-        </picture>
-        <picture>
-          <source srcSet={OrangeDesktop} media="(min-width:565px)"/>
-          <img src={OrangeMobile} alt="orange"/>
-        </picture>
-        <picture>
-          <source srcSet={ConeDesktop} media="(min-width:565px)"/>
-          <img src={ConeMobile} alt="ice cream cone"/>
-        </picture>
-        <picture>
-          <source srcSet={SugarCubeDesktop} media="(min-width:565px)"/>
-          <img src={SugarCubeMobile} alt="sugar cane"/>
-        </picture>
-      </div>
-
-      {/* Contacts */}
-      <div></div>
+      Footer
     </div>
   )
 }
