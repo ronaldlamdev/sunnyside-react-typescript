@@ -40,19 +40,19 @@ const Footer = () => {
       <div className='w-full bg-[#458c7e]/60 flex flex-col items-center justify-between gap-12 py-12'>
         <div className='flex flex-col items-center text-[#25564b] font-["Barlow"] gap-6'>
           <a href='/'>
-            <img src={Logo} className="" alt="logo"/>
+            <img src={Logo} className="w-full h-12" alt="logo"/>
           </a>
           <ul className='flex gap-6'>
-            <li className='cursor-pointer hover:underline hover:underline-offset-2'>About</li>
-            <li className='cursor-pointer hover:underline hover:underline-offset-2'>Services</li>
-            <li className='cursor-pointer hover:underline hover:underline-offset-2'>Projects</li>
+            <li className='cursor-pointer hover:underline hover:underline-offset-2 lg:text-2xl'>About</li>
+            <li className='cursor-pointer hover:underline hover:underline-offset-2 lg:text-2xl'>Services</li>
+            <li className='cursor-pointer hover:underline hover:underline-offset-2 lg:text-2xl'>Projects</li>
           </ul>
         </div>
         <div className='flex gap-6'>
-          <img className='cursor-pointer hover:opacity-70 hover:scale-125 duration-[400ms]' src={Facebook} alt="Facebook"/>
-          <img className='cursor-pointer hover:opacity-70 hover:scale-125 duration-[400ms]' src={Instagram} alt="Instagram"/>
-          <img className='cursor-pointer hover:opacity-70 hover:scale-125 duration-[400ms]' src={Twitter} alt="Twitter"/>
-          <img className='cursor-pointer hover:opacity-70 hover:scale-125 duration-[400ms]'src={Pinterest} alt="Pinterest"/>
+          <img className='cursor-pointer hover:opacity-70 hover:scale-125 duration-[400ms] w-8 h-8' src={Facebook} alt="Facebook"/>
+          <img className='cursor-pointer hover:opacity-70 hover:scale-125 duration-[400ms] w-8 h-8' src={Instagram} alt="Instagram"/>
+          <img className='cursor-pointer hover:opacity-70 hover:scale-125 duration-[400ms] w-8 h-8' src={Twitter} alt="Twitter"/>
+          <img className='cursor-pointer hover:opacity-70 hover:scale-125 duration-[400ms] w-8 h-8'src={Pinterest} alt="Pinterest"/>
         </div>
       </div>
     </div>
