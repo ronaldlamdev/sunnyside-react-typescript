@@ -3,11 +3,11 @@ import { testimonials } from '../data/data';
 
 const Testimonials = () => {
   return (
-    <div className="w-full flex flex-col h-screen lg:justify-evenly items-center py-4">
-      <h1 className='font-["Fraunces"] text-[#a7abae] text-xl lg:text-4xl tracking-[.2rem] px-8 min-[1709px]:mt-48'>
+    <div className="w-full flex flex-col h-screen lg:justify-center lg:gap-20 min-[1684px]:mt-40 items-center py-4">
+      <h1 className='font-["Fraunces"] text-[#a7abae] text-xl lg:text-4xl tracking-[.2rem] px-8'>
         Client Testimonials
       </h1>
-      <div className="flex pt-20 lg:pt-0 flex-col items-center gap-16 lg:grid lg:grid-cols-3">
+      <div className="flex pt-20 lg:pt-0 flex-col items-center gap-16 lg:gap-0 lg:grid lg:grid-cols-3">
         {testimonials.map((testimonial) => (
           <TestimonialCard 
             key={testimonial.id}
