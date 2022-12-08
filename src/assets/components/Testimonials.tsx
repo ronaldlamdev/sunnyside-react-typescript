@@ -3,7 +3,7 @@ import { testimonials } from '../data/data';
 
 const Testimonials = () => {
   return (
-    <div className="w-full flex flex-col h-screen lg:justify-center lg:gap-20 min-[1684px]:mt-40 items-center py-4">
+    <div className="w-full flex flex-col h-fit lg:h-screen lg:justify-center lg:gap-20 min-[1684px]:mt-40 items-center py-4">
       <h1 className='font-["Fraunces"] text-[#a7abae] text-xl lg:text-4xl tracking-[.2rem] px-8'>
         Client Testimonials
       </h1>
