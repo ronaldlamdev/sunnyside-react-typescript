@@ -117,7 +117,7 @@ body {
 /* Transform */
 
 .transform-container {
-  @apply w-full flex flex-col min-[565px]:grid 
+  @apply w-full h-fit flex flex-col min-[565px]:grid 
   min-[565px]:grid-cols-2
 }
 

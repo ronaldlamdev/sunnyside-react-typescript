@@ -9,13 +9,13 @@ import PhotographyDesktop from '../images/desktop/image-photography.jpg';
 
 const Main = () => {
   return (
-    <div className="flex h-full flex-col w-full justify-between">
+    <div className="flex h-full flex-col w-full justify-between items-center">
 
       {/* Transform */}
       <div className='transform-container'>
         <picture>
           <source srcSet={TransformDesktop} media='(min-width:565px)'/>
-          <img className='h-full w-full min-[565px]:order-last' src={TransformMobile} alt="egg"/>
+          <img className='h-full w-full object-cover min-[565px]:order-last' src={TransformMobile} alt="egg"/>
         </picture>
         <div className='transform-text-div'>
           <h1 className='text-[#23303e] text-4xl font-["Fraunces"]'>
@@ -38,7 +38,7 @@ const Main = () => {
       <div className='standout-container'>
         <picture>
           <source srcSet={StandOutDesktop} media="(min-width:565px)"/>
-          <img className='h-full w-full' src={StandOutMobile} alt="cup"/>
+          <img className='h-full w-full object-cover' src={StandOutMobile} alt="cup"/>
         </picture>
         <div className='standout-text-div'>
           <h1 className='text-[#23303e] text-4xl font-["Fraunces"]'>
@@ -63,7 +63,7 @@ const Main = () => {
         <div className='w-full h-full relative'>
           <picture>
             <source srcSet={GraphicDesignDesktop} media="(min-width:565px)"/>
-            <img className='min-[565px]:w-full min-[565px]:h-full object-contain' src={GraphicDesignMobile} alt="cherries"/>
+            <img className='min-[565px]:w-full min-[565px]:h-full object-cover' src={GraphicDesignMobile} alt="cherries"/>
           </picture>
           <div className='graphic-design-text-container'>
             <h1 className='font-["Fraunces"] text-3xl'>Graphic Design</h1>
@@ -79,7 +79,7 @@ const Main = () => {
         <div className='w-full h-full relative'>
           <picture>
             <source srcSet={PhotographyDesktop} media="(min-width:565px)"/>
-            <img className='min-[565px]:w-full min-[565px]:h-full object-contain' src={PhotographyMobile} alt="orange" />
+            <img className='min-[565px]:w-full min-[565px]:h-full object-cover' src={PhotographyMobile} alt="orange" />
           </picture>
           <div className='photography-text-container'>
             <h1 className='font-["Fraunces"] text-3xl'>Photography</h1>
