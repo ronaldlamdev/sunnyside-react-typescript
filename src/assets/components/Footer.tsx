@@ -16,6 +16,7 @@ import Pinterest from '../images/icon-pinterest.svg'
 const Footer = () => {
   return (
     <div className='w-full h-fit'>
+      {/* Image gallery */}
       <div className='grid w-full grid-cols-2 min-[565px]:grid-cols-4'>
         <picture>
           <source srcSet={MilkBottlesDesktop} media="(min-width:1024px)"/>
@@ -34,20 +35,24 @@ const Footer = () => {
           <img src={SugarCubeMobile} alt="milk bottles"/>
         </picture>
       </div>
-      <div className='w-full bg-[#458c7e]'>
-        <div>
-          <img src={Logo} alt="logo"/>
-          <ul className='flex'>
-            <li>About</li>
-            <li>Services</li>
-            <li>Projects</li>
+
+      {/* Socials */}
+      <div className='w-full bg-[#458c7e]/60 flex flex-col items-center justify-between gap-12 py-12'>
+        <div className='flex flex-col items-center text-[#25564b] font-["Barlow"] gap-6'>
+          <a href='/'>
+            <img src={Logo} className="" alt="logo"/>
+          </a>
+          <ul className='flex gap-6'>
+            <li className='cursor-pointer hover:underline hover:underline-offset-2'>About</li>
+            <li className='cursor-pointer hover:underline hover:underline-offset-2'>Services</li>
+            <li className='cursor-pointer hover:underline hover:underline-offset-2'>Projects</li>
           </ul>
         </div>
-        <div>
-          <img src={Facebook} alt="Facebook"/>
-          <img src={Instagram} alt="Instagram"/>
-          <img src={Twitter} alt="Twitter"/>
-          <img src={Pinterest} alt="Pinterest"/>
+        <div className='flex gap-6'>
+          <img className='cursor-pointer hover:opacity-70 hover:scale-125 duration-[400ms]' src={Facebook} alt="Facebook"/>
+          <img className='cursor-pointer hover:opacity-70 hover:scale-125 duration-[400ms]' src={Instagram} alt="Instagram"/>
+          <img className='cursor-pointer hover:opacity-70 hover:scale-125 duration-[400ms]' src={Twitter} alt="Twitter"/>
+          <img className='cursor-pointer hover:opacity-70 hover:scale-125 duration-[400ms]'src={Pinterest} alt="Pinterest"/>
         </div>
       </div>
     </div>
